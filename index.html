@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+
+    <title>BT5</title>
+  </head>
+  <body>
+  
+  
+  <div class="container">
+   
+   <!--form-->
+     
+<form class="row g-3 needs-validation" novalidate>
+
+  <!--first name-->
+  <div class="col-md-6">
+    <label for="f_name" class="form-label">First name</label>
+    <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="enter your first name" readonly="">
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+        enter your first name.
+      </div>
+  </div>
+
+<!--last name-->
+  <div class="col-md-6">
+    <label for="l_name" class="form-label">Last name</label>
+    <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="enter your last name"  required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+        enter your last name.
+      </div>
+  </div>
+
+<!--email-->
+
+<div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="enter your email address" required>
+  <label for="floatingInput">Email address</label>
+  <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+        enter your email address.
+    </div>
+</div>
+
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+  <label for="floatingPassword">Password</label>
+  <div class="valid-feedback">
+      Looks good!
+  </div>
+  <div class="invalid-feedback">
+      choose a password.
+    </div>
+</div>
+
+  <div class="col-md-12">
+    <label for="email" class="form-label">Email Address</label>
+    <input type="email" class="form-control email" id="email" name="email" placeholder="enter your email address"  required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+        enter your email address.
+      </div>
+  </div>
+
+<!--data list-->
+<label for="datalist" class="form-label h_town">Your Home Town</label>
+<input class="form-control" list="datalistOptions" id="datalist" placeholder="Type to search...">
+<datalist id="datalistOptions">
+  <option value="Dhaka">
+  <option value="Chittagong">
+  <option value="Khulna">
+  <option value="Sylhet">
+  <option value="Other">
+</datalist>
+
+<!--comment-->
+ <div class="mb-3">
+  <label for="textarea1" class="form-label">Put your comment</label>
+  <textarea class="form-control" id="textarea1" placeholder="Leave a comment here" name="textarea1" rows="5"></textarea>
+</div>
+
+<!--file upload-->
+<div class="mb-3">
+ <label for="formFile" class="form-label">Upload Your File</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+
+<div class="mb-3">
+  <label for="formFileMultiple" class="form-label">Upload Your Files</label>
+  <input class="form-control" type="file" id="formFileMultiple" multiple>
+</div>
+
+<div class="input-group mb-3">
+  <input type="file" class="form-control" id="inputGroupFile02">
+  <label class="input-group-text" for="inputGroupFile02">Upload</label>
+</div>
+
+<!--checkbox-->
+<div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+<!--form-->
+
+
+<!--accordion-->
+<h1>Accordion</h1>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+</div>
+
+
+<!--alert-->
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>When an alert is dismissed!</strong>  the element is completely removed from the page structure. If a keyboard user dismisses the alert using the close button, their focus will suddenly be lost and, depending on the browser, reset to the start of the page/document. For this reason, we recommend including additional JavaScript that listens for the closed.bs.alert event and programmatically sets focus() to the most appropriate location in the page. If you’re planning to move focus to a non-interactive element that normally does not receive focus, make sure to add tabindex="-1" to the element.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+
+
+    <!-- JS Links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
